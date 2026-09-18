@@ -40,28 +40,4 @@
         </plugins>
     </build>
 
-</project>package me.shadowsmp;
-
-import org.bukkit.plugin.java.JavaPlugin;
-
-public class ShadowSmpCore extends JavaPlugin {
-
-    @Override
-    public void onEnable() {
-
-        LifestealManager lifestealManager = new LifestealManager(this);
-
-        getServer().getPluginManager().registerEvents(lifestealManager, this);
-
-        if (getCommand("withdraw") != null) {
-            getCommand("withdraw").setExecutor(lifestealManager);
-        }
-
-        getLogger().info("ShadowSmpCore has been enabled!");
-    }
-
-    @Override
-    public void onDisable() {
-        getLogger().info("ShadowSmpCore has been disabled!");
-    }
-}
+</project> 
