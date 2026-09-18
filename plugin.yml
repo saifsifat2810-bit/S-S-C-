@@ -1,0 +1,11 @@
+name: ShadowSmpCore
+version: 1.0.0
+main: me.shadowsmp.ShadowSmpCore
+description: A powerful Lifesteal and Headsteal plugin for every SMP
+author: Shadow SMP
+api-version: '1.21'
+
+commands:
+  withdraw:
+    description: Withdraw hearts
+    usage: /withdraw <amount>
